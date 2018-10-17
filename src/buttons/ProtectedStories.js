@@ -15,7 +15,7 @@ export default class ProtectedStories extends Component {
         this.setState({
             [event.target.name]: event.target.value
         })
-        // console.log(this.state.userStory)
+         console.log('this function is running')
     }
 
      handleSubmit = (event) => {
