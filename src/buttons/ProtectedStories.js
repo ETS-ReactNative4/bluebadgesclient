@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Form, Input, Button, Label, FormGroup, Container, Row, Col} from 'reactstrap';
 import {Link} from 'react-router-dom';
+import APIURL from '../helpers/environment'
 
 export default class ProtectedStories extends Component {
     constructor(props){
@@ -18,7 +19,7 @@ export default class ProtectedStories extends Component {
     }
 
      handleSubmit = (event) => {
-         fetch('http://localhost:4000/stories/new', {
+         fetch(`${APIURL}/stories/new`, {
              method: 'POST',
              body: JSON.stringify(this.state),
              headers: new Headers ({

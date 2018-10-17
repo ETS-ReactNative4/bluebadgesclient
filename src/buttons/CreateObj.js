@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Form, Input, FormGroup, Label, Button, Container, Row, Col } from 'reactstrap';
+import APIURL from '../helpers/environment'
 
 export default class CreateObj extends Component {
     constructor(props){
@@ -25,7 +26,7 @@ export default class CreateObj extends Component {
     }
     
     handleSubmit = (event) => {
-        fetch('http://localhost:4000/objects/new', {
+        fetch(`${APIURL}/objects/new`, {
             method: 'POST',
             body: JSON.stringify(this.state),
             headers: new Headers ({

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Form, FormGroup, Label, Input, Button} from 'reactstrap';
+import APIURL from '../helpers/environment'
 
 export default class NewSet extends Component {
     constructor(props){
@@ -25,7 +26,7 @@ export default class NewSet extends Component {
     }
 
     handleSubmits = (event) => {
-        fetch('http://localhost:4000/settings/newset', {
+        fetch(`${APIURL}/settings/newset`, {
             method: 'POST',
             body: JSON.stringify(this.state),
             headers: new Headers ({

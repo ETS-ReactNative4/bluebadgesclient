@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import DisplayFiles from './DisplayFiles';
+import APIURL from '../helpers/environment'
+
 
 
 export default class GetFiles extends Component {
@@ -15,7 +17,7 @@ export default class GetFiles extends Component {
     }
 
     handleSubmit = (event) => {
-        fetch('http://localhost:4000/stories/getall', {
+        fetch(`${APIURL}/stories/getall`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json'
