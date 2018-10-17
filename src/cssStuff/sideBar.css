@@ -1,0 +1,19 @@
+  /* .sidebar {
+    float: left;
+    display: flex;
+} 
+
+.links {
+    background-color: gray;
+    height: 100%;
+    padding:  50% 0;
+} */
+
+.button {
+    margin-right: 1%;  
+    background-color: gray;
+}
+
+.button:hover {
+    background-color: #dcdfe5;
+}

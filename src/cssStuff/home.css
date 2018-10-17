@@ -1,0 +1,30 @@
+ .hom {
+    /* border: solid 1px black;   */
+    /* padding: 15%; */
+    /* margin-top: 15%; 
+    margin-left: 25%;
+    width: 50%; */
+    margin-top: 5%;
+} 
+
+.buttons {
+    background-color: gray;
+}
+
+.buttons:hover {
+    background-color: #dcdfe5;
+} 
+
+.small {
+    font-size: 15px;
+}
+
+.cardOne {
+    margin-top: 3%;
+     border: solid 1px black;
+}
+
+.homeCard {
+    border: solid 1px black;
+}
+

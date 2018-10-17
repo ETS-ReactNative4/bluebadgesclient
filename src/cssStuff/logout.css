@@ -1,0 +1,9 @@
+.logg {
+    color: rgb(34, 81, 236);
+    background-color: white;
+}
+
+.logg:hover {
+    color: rgb(34, 81, 236);
+    background-color: rgb(97, 97, 97);
+} 
