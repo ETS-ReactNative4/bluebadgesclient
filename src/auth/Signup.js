@@ -24,14 +24,11 @@ class Signup extends Component {
         console.log('just a test')
         if(this.state.password.length < 6){
             alert('Password must be at least 6 characters')
-        }
-        if(this.state.firstName === ''){
+        } else if(this.state.firstName === ''){
             alert('Name cannot be blank')
-        }
-        if(this.state.lastName === ''){
+        } else if(this.state.lastName === ''){
             alert('Name cannot be blank')
-        }
-        else{
+        } else{
             this.handleSubmit();
         }
     }
