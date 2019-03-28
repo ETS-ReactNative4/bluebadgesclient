@@ -39,15 +39,15 @@ export default class ProtectedStories extends Component {
                 <Container> 
                     <Row>
                         <Col md='12' md={{size: 6, offset: 3}}>
-                 <Form onSubmit={this.handleSubmit}>
-                     <FormGroup>
-                         <Label for='userStory'>Write a story</Label>
-                         <Input  style={{height: '200px'}} id='ps_story' type='text' name='userStory' placeholder='enter story' value={this.state.userStory} onChange={this.handleChange} >
-                         </Input>
-                     </FormGroup>
-                         <Button>Submit Story</Button>
-                 </Form>
-                 <Button className='color'><Link to='/log'>Back</Link></Button>
+                            <Form onSubmit={this.handleSubmit}>
+                                <FormGroup>
+                                    <Label for='userStory'>Write a story</Label>
+                                    <Input  style={{height: '200px'}} id='ps_story' type='text' name='userStory' placeholder='enter story' value={this.state.userStory} onChange={this.handleChange} >
+                                    </Input>
+                                </FormGroup>
+                                    <Button>Submit Story</Button>
+                            </Form>
+                            <Button className='color'><Link to='/log'>Back</Link></Button>
                         </Col>
                     </Row>
                  </Container>

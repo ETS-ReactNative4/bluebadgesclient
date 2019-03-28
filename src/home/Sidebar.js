@@ -48,7 +48,7 @@ class Sidebar extends Component  {
                         </Nav>
                         </Collapse>
                 </Navbar>  
-                <div>
+                    <div>
                          <Switch>
                              <Route exact path='/'><Home /></Route>
                              <Route exact path='/log'><Log /></Route>

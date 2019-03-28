@@ -1,8 +1,6 @@
 body {
-  background-color: #BBE5ED;
-  /* background-color: #B2F9FF; */
-  /* background-color: #7ADFBB; */
-  /* background-color: #EAC9AD; */
+   background-color: #BBE5ED; 
+   background-image: url('./cssStuff/assets/Collage199.jpg'); 
 }
 
 .App {
