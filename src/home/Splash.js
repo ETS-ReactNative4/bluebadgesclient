@@ -8,6 +8,7 @@ import DestroySet from '../buttons/DestroySet';
 import DeleteObj from '../buttons/DeleteObj';
 import SettingsEdit from '../buttons/SettingsEdit'
 import ObjectsEdit from '../buttons/ObjectsEdit'
+import APIURL from '../helpers/environment'
 
 class Splash extends Component {
     constructor(props){
@@ -28,7 +29,7 @@ class Splash extends Component {
     } 
 
     fetchSettings = () => {
-        fetch('http://localhost:4000/settings/', { 
+        fetch(`${APIURL}/settings/`, { 
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -44,7 +45,7 @@ class Splash extends Component {
 
     settingsDelete = (event) => {
         console.log('IT WORKS')
-        fetch(`http://localhost:4000/settings/delete/${event.target.id}`, {
+        fetch(`${APIURL}/settings/delete/${event.target.id}`, {
             method: 'DELETE',
             body: JSON.stringify({ id: event.target.id} ),
             headers: new Headers({
@@ -58,7 +59,7 @@ class Splash extends Component {
     }
 
     fetchObjects = () => {
-        fetch('http://localhost:4000/objects/', { 
+        fetch(`${APIURL}/objects/`, { 
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
@@ -74,7 +75,7 @@ class Splash extends Component {
 
     objectDelete = (event) => {
         console.log('IT WORKS')
-        fetch(`http://localhost:4000/objects/delete/${event.target.id}`, {
+        fetch(`${APIURL}/objects/delete/${event.target.id}`, {
             method: 'DELETE',
             body: JSON.stringify({ id: event.target.id} ),
             headers: new Headers({
@@ -88,7 +89,7 @@ class Splash extends Component {
     }
 
     settingsUpdate = (event, setting) => {
-        fetch(`http://localhost:4000/settings/update/${setting.id}`, {
+        fetch(`${APIURL}/settings/update/${setting.id}`, {
             method: 'PUT',
             body: JSON.stringify(setting),
             headers: new Headers({
@@ -112,7 +113,7 @@ class Splash extends Component {
 
     objectsUpdate = (event, object) => {
         console.log('objectsUpdate')
-        fetch(`http://localhost:4000/objects/update/${object.id}`, {
+        fetch(`${APIURL}/objects/update/${object.id}`, {
             method: 'PUT',
             body: JSON.stringify(object),
             headers: new Headers({

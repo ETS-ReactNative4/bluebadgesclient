@@ -48,4 +48,4 @@ class SettingsEdit extends Component {
     }
 }
 
-export default SettingsEdit;
+export default SettingsEdit; 

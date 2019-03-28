@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Form, Button} from 'reactstrap';
 import DisplayItems from './DisplayItems'
 import '../cssStuff/seeItems.css'
+import APIURL from '../helpers/environment'
 
 export default class SeeItems extends Component {
     constructor(props){
@@ -21,7 +22,7 @@ export default class SeeItems extends Component {
     }
 
     handleSubmit = (event) => {
-        fetch('http://localhost:4000/objects', {
+        fetch(`${APIURL}/objects`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json'

@@ -11,7 +11,7 @@ const DisplayFiles = (props) => {
                     <tr>
                         <th>Stories</th>
                     </tr>
-                </thead> */}
+                </thead> */} 
                 <tbody>
                     {
                         props.property.map((properties, id) => {

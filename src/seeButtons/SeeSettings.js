@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Form, Button} from 'reactstrap';
 import DisplaySettings from './DisplaySettings'
 import '../cssStuff/seeSetting.css'
+import APIURL from '../helpers/environment'
 
 
 export default class SeeSettings extends Component {
@@ -22,7 +23,7 @@ export default class SeeSettings extends Component {
     }
 
     handleSubmit = (event) => {
-        fetch('http://localhost:4000/settings', {
+        fetch(`${APIURL}/settings`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json'

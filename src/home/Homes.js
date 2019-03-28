@@ -3,7 +3,7 @@ import '../cssStuff/home.css'
 import {Route, Switch, Link} from 'react-router-dom'
 import SeeAll from '../home/SeeAll'
 import GetFiles from '../home/GetFiles'
-import {Button, Card, CardBody, CardTitle, CardText, Container, Row, Col} from 'reactstrap'
+import {Button, Card, CardBody, CardTitle, CardText, Container, Row, Col, Jumbotron} from 'reactstrap'
 class Homes extends Component{
     constructor(props) {
         super(props)
@@ -14,7 +14,10 @@ class Homes extends Component{
     render(){   
     return(
         <div className="allThings">
-            <Container>
+                <Jumbotron>
+                    <h1>Story Constructor</h1>
+                </Jumbotron>
+             <Container>
                 <Row>
                     <Col md="12" md={{ size: 6, offset: 3 }}>
                         <Card className='homeCard'>
@@ -31,7 +34,7 @@ class Homes extends Component{
                         </Card>
                      </Col>
                 </Row>
-            </Container>
+            </Container> 
             <Container>
                 <Row>
                     <Col md='6'>

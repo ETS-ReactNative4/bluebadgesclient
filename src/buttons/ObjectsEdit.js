@@ -51,4 +51,4 @@ class ObjectsEdit extends Component {
     }
 }
 
-export default ObjectsEdit;
+export default ObjectsEdit; 

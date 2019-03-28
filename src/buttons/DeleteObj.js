@@ -27,7 +27,7 @@ const DeleteObj = (props) => {
                                         <Button className="delete" id={object.id} onClick={props.delete} >Delete</Button>|
                                         <Button className="update" id={object.id} onClick={event => props.updates(event, object)}>Update</Button>
                                     </td>
-                                </tr>
+                                </tr> 
                             )
                         })
                     }
