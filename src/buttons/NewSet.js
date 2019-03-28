@@ -54,6 +54,7 @@ export default class NewSet extends Component {
                     </FormGroup>
                     <Button type='submit'> Submit </Button>
                 </Form>
+        
             </div>
         )
     }
